@@ -1,9 +1,11 @@
-import Image from "next/image";
+import HeroSection from "./components/hero-section";
+import TrustSection from "./components/trust-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans dark:bg-black">
-      qweqw
-    </div>
+    <>
+      <HeroSection />
+      <TrustSection />
+    </>
   );
 }
