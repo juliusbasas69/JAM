@@ -1,57 +1,58 @@
 import React from "react";
-import { ShieldCheckIcon } from "@heroicons/react/24/solid"; // Using Heroicons for the shield icon
+import { ShieldCheckIcon } from "@heroicons/react/24/solid";
 
 export default function TrustSection() {
   const items = [
     {
-      title: "Tiwala",
+      title: "Trusted Quality",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "We ensure all our second-hand branded items are carefully inspected for quality and authenticity.",
     },
     {
-      title: "Tiwala",
+      title: "Affordable Prices",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "Our products are priced fairly, making premium second-hand fashion accessible to everyone.",
     },
     {
-      title: "Tiwala",
+      title: "Wide Selection",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "We offer a variety of clothing, accessories, and shoes to suit different styles and preferences.",
     },
     {
-      title: "Tiwala",
+      title: "Sustainable Choice",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "By choosing pre-loved items, you contribute to reducing waste and supporting sustainable fashion.",
     },
     {
-      title: "Tiwala",
+      title: "Customer Satisfaction",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "We prioritize your happiness with reliable service, easy returns, and helpful support.",
     },
     {
-      title: "Tiwala",
+      title: "Authenticity Guaranteed",
       description:
-        "Tapat at malinaw kami sa kalidad, presyo, at pinanggalingan ng aming mga branded ukay items.",
+        "All items are verified to be genuine branded products, so you shop with confidence.",
     },
   ];
 
   return (
-    <section className="py-16 bg-white text-gray-800">
+    <section className="py-16 bg-white text-gray-800 max-w-7xl m-auto">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-semibold mb-4">
-          Abot-Kayang Branded Ukay para sa Lahat
+          Affordable Branded Pre-Loved Fashion for Everyone
         </h2>
         <p className="text-gray-500 mb-12">
-          Nagbigay kami ng de-kalidad at branded na ukay-ukay collections sa
-          presyong kaya ng bawat Pilipino — swak sa araw-araw at sa negosyo.
+          We provide high-quality, branded second-hand collections at prices
+          that everyone can afford — perfect for daily wear or even small
+          businesses.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col items-left text-left">
-              <ShieldCheckIcon className="w-12 h-12 text-red-500 mb-4" />
+            <div key={index} className="flex flex-col items-start text-left">
+              <ShieldCheckIcon className="w-10 h-10 text-berry mb-4" />
               <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-600">{item.description}</p>
+              <p className="text-gray-500">{item.description}</p>
             </div>
           ))}
         </div>

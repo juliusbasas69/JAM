@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="w-full flex flex-row justify-center mt-10">
+    <div className="w-full flex flex-row justify-center mt-10 max-w-7xl m-auto">
       <div className="w-1/2">
         <Image
           src="/images/image-ones.png"
@@ -37,38 +37,6 @@ export default function HeroSection() {
           /> */}
           Find Branch
         </span>
-        <div className="flex flex-wrap gap-2">
-          <div className="flex gap-1 items-center text-sm">
-            <Image
-              src="/icons/facebook.svg"
-              alt="Facebook"
-              width={20}
-              height={20}
-              className="bg-berry py-1 px-1 box-border rounded-md"
-            />
-            {/* <span className="text-gray-500">jamsbrandedcollection</span> */}
-          </div>
-          <div className="flex gap-1 items-center text-sm">
-            <Image
-              src="/icons/instagram.svg"
-              alt="Facebook"
-              width={20}
-              height={20}
-              className="bg-berry py-1 px-1 box-border rounded-md"
-            />
-            {/* <span className="text-gray-500">jamsbrandedcollection</span> */}
-          </div>
-          <div className="flex gap-1 items-center text-sm">
-            <Image
-              src="/icons/tiktok.svg"
-              alt="Facebook"
-              width={20}
-              height={20}
-              className="bg-berry py-1 px-1 box-border rounded-md"
-            />
-            {/* <span className="text-gray-500">jamsbrandedcollection</span> */}
-          </div>
-        </div>
       </div>
     </div>
   );

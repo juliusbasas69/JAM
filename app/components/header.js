@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full p-4 bg-white flex justify-between items-center">
+    <header className="w-full p-4 bg-white flex justify-between items-center max-w-7xl m-auto">
       <img className="w-30" src="/images/jam_logo.png" alt="Logo" />
       <nav className="flex gap-8">
         <Link href="/">
